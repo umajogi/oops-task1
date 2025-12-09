@@ -1,0 +1,18 @@
+#every clss instance have the same value 
+class vehicle:
+    color="white"
+    def __init__(self,name,max_speed,mileage):
+        self.name=name
+        self.max_speed=max_speed
+        self.mileage=mileage
+class bus(vehicle):
+    def vehiclecolor(self,color="pink"):
+        print( f" color:{color}, vehicle name:{self.name}, max_speed:{self.max_speed}, mileage:{self.mileage}") #if we use self.color then it returns the white which is default value defined in the class
+        
+class train(vehicle):
+    def vehiclecolor(self,color="white"):
+        print(f" color:{color}, vehicle name:{self.name}, max_speed:{self.max_speed}, mileage:{self.mileage}")  
+obj=train("benz",120,20)
+obj.vehiclecolor()
+obj1=bus("volc",23,45)
+obj1.vehiclecolor()

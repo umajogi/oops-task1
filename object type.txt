@@ -1,0 +1,12 @@
+#check type of an object
+#type(obj_created)
+class vehicle:
+    def __init__(self,name,max_speed,mileage,capacity):
+        self.name=name
+        self.max_speed=max_speed
+        self.mileage=mileage
+        self.capacity=capacity
+class bus(vehicle):
+    pass
+obj=bus("benz",120,23,12)
+print(type(obj))
